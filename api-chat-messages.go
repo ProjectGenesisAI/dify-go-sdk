@@ -53,7 +53,8 @@ func (dc *DifyClient) ChatMessages(inputs string, conversation_id string, files 
 		if err != nil {
 			return result, fmt.Errorf("inputs should be a valid JSON string")
 		}
-		payload.Inputs = tryDecode
+		// payload.Inputs = tryDecode
+		payload.Query = tryDecode["query"].(string)
 	}
 
 	payload.ResponseMode = RESPONSE_MODE_BLOCKING
