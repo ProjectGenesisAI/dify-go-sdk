@@ -1,7 +1,7 @@
 package dify
 
 const (
-	DEFAULT_TIMEOUT = 10
+	DEFAULT_TIMEOUT = 300
 	DEFAULT_USER    = "dify-go-sdk"
 
 	RESPONSE_MODE_STREAMING = "streaming"
